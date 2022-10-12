@@ -18,15 +18,22 @@ public class Player : MonoBehaviour
 		hits = 0;
 	}
 
-	public void Hit()
+	void Update()
 	{
-
-		if(hitList.Count > 0)
+		foreach(Touch touch in Input.touches)
 		{
-			hits++;
-			text.text = hits.ToString();
-			particles.Play();
-			Destroy(hitList[0]);
+			if (touch.phase == TouchPhase.Began)
+			{
+				Debug.Log("bruh");
+
+				if(hitList.Count > 0)
+				{
+					hits++;
+					text.text = hits.ToString();
+					particles.Play();
+					Destroy(hitList[0]);
+				}
+			}
 		}
 	}
 

@@ -8,21 +8,21 @@
                 {
                     "name": "hit",
                     "type": "Button",
-                    "id": "bf6ed0d7-58fa-4e63-8b61-e75ae91195da",
+                    "id": "d3f5df80-4544-42d6-809c-8a33820b139a",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
-                    "initialStateCheck": true
+                    "initialStateCheck": false
                 }
             ],
             "bindings": [
                 {
                     "name": "",
-                    "id": "1daf961e-0f69-4f7e-bb3c-6df7f3f4fb7b",
-                    "path": "<Keyboard>/s",
+                    "id": "88c1fbaa-e871-4f4f-aafe-a812a8fd5936",
+                    "path": "<Touchscreen>/Press",
                     "interactions": "",
                     "processors": "",
-                    "groups": "Keyboard&Mouse",
+                    "groups": "Touch",
                     "action": "hit",
                     "isComposite": false,
                     "isPartOfComposite": false
